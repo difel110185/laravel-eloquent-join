@@ -1,14 +1,14 @@
 <?php
 
-namespace Fico7489\Laravel\EloquentJoin;
+namespace Difel\Laravel\EloquentJoin;
 
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelation;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationClause;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationGlobalScope;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationWhere;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelation;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationClause;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationGlobalScope;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationWhere;
 use Illuminate\Database\Eloquent\Builder;
-use Fico7489\Laravel\EloquentJoin\Relations\BelongsToJoin;
-use Fico7489\Laravel\EloquentJoin\Relations\HasOneJoin;
+use Difel\Laravel\EloquentJoin\Relations\BelongsToJoin;
+use Difel\Laravel\EloquentJoin\Relations\HasOneJoin;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -31,6 +31,13 @@ class EloquentJoinBuilder extends Builder
         $column = $this->performJoin($column);
 
         return $this->where($column, $operator, $value, $boolean);
+    }
+
+    public function whereInJoin($column, $values, $boolean = 'and', $not = false)
+    {
+        $column = $this->performJoin($column);
+
+        return $this->whereIn($column, $values, $boolean, $not);
     }
 
     public function orWhereJoin($column, $operator = null, $value = null)

@@ -1,11 +1,11 @@
 <?php
 
-namespace Fico7489\Laravel\EloquentJoin\Tests\Tests;
+namespace Difel\Laravel\EloquentJoin\Tests\Tests;
 
-use Fico7489\Laravel\EloquentJoin\Tests\Models\Order;
-use Fico7489\Laravel\EloquentJoin\Tests\Models\OrderItem;
-use Fico7489\Laravel\EloquentJoin\Tests\Models\Seller;
-use Fico7489\Laravel\EloquentJoin\Tests\TestCase;
+use Difel\Laravel\EloquentJoin\Tests\Models\Order;
+use Difel\Laravel\EloquentJoin\Tests\Models\OrderItem;
+use Difel\Laravel\EloquentJoin\Tests\Models\Seller;
+use Difel\Laravel\EloquentJoin\Tests\TestCase;
 
 class WhereJoinTest extends TestCase
 {

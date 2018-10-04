@@ -1,13 +1,13 @@
 <?php
 
-namespace Fico7489\Laravel\EloquentJoin\Tests\Tests;
+namespace Difel\Laravel\EloquentJoin\Tests\Tests;
 
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelation;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationClause;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationGlobalScope;
-use Fico7489\Laravel\EloquentJoin\Exceptions\InvalidRelationWhere;
-use Fico7489\Laravel\EloquentJoin\Tests\Models\Seller;
-use Fico7489\Laravel\EloquentJoin\Tests\TestCase;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelation;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationClause;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationGlobalScope;
+use Difel\Laravel\EloquentJoin\Exceptions\InvalidRelationWhere;
+use Difel\Laravel\EloquentJoin\Tests\Models\Seller;
+use Difel\Laravel\EloquentJoin\Tests\TestCase;
 
 class ExceptionTest extends TestCase
 {
